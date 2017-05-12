@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if [ x$1 == 'x-i' ];
+then
+rm -if *.pyc;
+else
+rm -f *.pyc;
+fi
