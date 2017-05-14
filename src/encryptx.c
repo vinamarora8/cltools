@@ -10,6 +10,12 @@ int main(int argc, char *argv[]) {
 		return 0;
 	}
 
+	// Check if file exists
+	if (access(argv[1], F_OK) == -1){
+		fprintf(stderr, "cannot find file: %s\n", argv[1]);
+		return -1;
+	}
+
 	// Initial regs
 	
 	// Password confirmation
